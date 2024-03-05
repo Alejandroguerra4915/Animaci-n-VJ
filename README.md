@@ -19,4 +19,8 @@ https://youtu.be/p_SCXDPAVuM
 Eje Negativo + Idle y breaker
 https://www.youtube.com/watch?v=VDgr7B3yjNQ
 
+----Blender---
+Spirnt---caminar frente--- camniar diagonal
+https://upbeduco-my.sharepoint.com/:f:/g/personal/alejandro_guerrab_upb_edu_co/Et6R6dQKRLhCslsVr8SdpScBa881ZH5m8OYKPnB2lJUn8g?e=6lkqOw
+
 
