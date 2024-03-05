@@ -8,29 +8,8 @@ https://youtu.be/TuONZetc6QI ---> Unity
 # 1er Lote de animacion
 
 ## Correr 
-### Correr de frente 
-https://youtu.be/tnth_Ayp5CA
-
-### Correr de frente Izquierda 
-https://youtu.be/1ZHkVe7IoMo
-
-### Correr de frente Derecha
-https://youtu.be/V_J26jBN56g
-
-### Correr Izquierda 
-https://youtu.be/x4ECSc2Sa0o
-
-### Correr Derecha
-https://youtu.be/G_huworPPLw
-
-### Correr Atras
-https://youtu.be/japFrklFcv0
-
-### Correr Atras Derecha
-https://youtu.be/FpszUEozs3w
-
-### Correr Atras Izquierda
-https://youtu.be/c3tpG4A0j6c
+### Correr en Blender
+https://drive.google.com/file/d/1r_XzpPtBFj7ybGj_T_NeyaqLz1NW_0xF/view?usp=sharing
 
 ### Correr en unity
 https://youtu.be/p_SCXDPAVuM
