@@ -6,16 +6,18 @@ using System;
 
 public static class Foot 
 {
-    [DrawGizmo(GizmoType.Active | GizmoType.NonSelected, typeof(Walk))]
+    [DrawGizmo(GizmoType.Active | GizmoType.NonSelected, typeof(FootIk_Aguapanela))]
     public static void DrawGizmos(Component component, GizmoType gizmoType)
 
     {
-        Walk target = component as Walk;
+        /*
+        FootIk_Aguapanela target = component as FootIk_Aguapanela;
         if (target == null) return;
         Gizmos.color = target.HasTarget ? Color.green : Color.red;
         Vector3 detectionStartPosition = target.GetDetectionStartPosition();
         Gizmos.DrawSphere(target.GetDetectionStartPosition(), 0.1f);
         Handles.Label(target.GetDetectionStartPosition(), "punto de detec");
+        */
 
     }
 }
