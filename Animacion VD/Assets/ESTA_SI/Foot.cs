@@ -10,14 +10,12 @@ public static class Foot
     public static void DrawGizmos(Component component, GizmoType gizmoType)
 
     {
-        /*
+        
         FootIk_Aguapanela target = component as FootIk_Aguapanela;
         if (target == null) return;
         Gizmos.color = target.HasTarget ? Color.green : Color.red;
         Vector3 detectionStartPosition = target.GetDetectionStartPosition();
         Gizmos.DrawSphere(target.GetDetectionStartPosition(), 0.1f);
         Handles.Label(target.GetDetectionStartPosition(), "punto de detec");
-        */
-
     }
 }
