@@ -26,6 +26,8 @@ https://www.youtube.com/watch?v=VDgr7B3yjNQ
 Eje positivo + sprint
 https://youtu.be/uL0CRoSg7tM
 
-
+### Animation Rigging
+## Ik
+https://youtu.be/-_FlnxwUzec
 
 
