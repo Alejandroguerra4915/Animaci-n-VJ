@@ -30,4 +30,5 @@ https://youtu.be/uL0CRoSg7tM
 ## Ik
 https://youtu.be/-_FlnxwUzec
 
-
+# Controlador del persojane y Rig
+https://youtu.be/7038J26tGII
