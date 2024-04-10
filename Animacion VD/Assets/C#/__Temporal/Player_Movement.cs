@@ -6,45 +6,37 @@ using UnityEngine.InputSystem;
 public class Player_Movement : MonoBehaviour
 {
 
-    CharacterController characterController;
     Transform cam;
 
-    float speedSmoothVelocity;
-    float speedSmoothTime;
-    float currentSpeed;
-    float velocityY;
     Vector3 moveInput;
-    Vector3 dir;
 
     [SerializeField] float gravity = 25f;
     [SerializeField] float moveSpeed = 2f;
     [SerializeField] float rotateSpeed = 3f;
-    [SerializeField] Animator animator;
+    [SerializeField] Animator camera_Controller;
+    [SerializeField] Animator character_Controller;
     bool _lock = false;
 
-    void Start()
+    private void Start()
     {
-        characterController = GetComponent<CharacterController>();
         cam = Camera.main.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        playerRotation();
 
         if (Input.GetKeyDown(KeyCode.Q)) 
         {
             if (_lock) 
             {
                 _lock = false;
-                animator.Play("FreeLook");
+                camera_Controller.Play("FreeLook");
             }
             else 
             {
                 _lock = true;
-                animator.Play("Lock");
+                camera_Controller.Play("Lock");
             }
         }
 
@@ -54,25 +46,26 @@ public class Player_Movement : MonoBehaviour
     {
         Vector2 Input = context.ReadValue<Vector2>();
 
-        Vector3 forward = Camera.main.transform.forward;
-        Vector3 right = Camera.main.transform.right;
-        forward.y = 0;
-        right.y = 0;
-        forward.Normalize();
-        right.Normalize();
+        playerRotation();
 
-        moveInput = (right * Input.x + forward * Input.y).normalized;
+        character_Controller.SetFloat("X", Input.x);
+        character_Controller.SetFloat("Y", Input.y);
     }
 
-    private void Move() 
+    /*public void OnMovement(InputAction.CallbackContext context)
     {
-        transform.position += moveInput * moveSpeed * Time.deltaTime;
-    }
+        Vector2 movement = context.ReadValue<Vector2>();
+
+        Debug.Log(movement);
+        character_Controller.SetFloat("X", movement.x);
+        character_Controller.SetFloat("Y", movement.y);
+    }*/
 
     private void playerRotation() 
     {
-        float angle = Mathf.Atan2(moveInput.x, moveInput.z) * Mathf.Rad2Deg;
 
-        transform.rotation = Quaternion.Euler(0, angle, 0);
+        Vector3 forward = cam.forward;
+        forward.y = 0f;
+        transform.LookAt(forward*10);
     }
 }
