@@ -4,6 +4,20 @@ https://youtu.be/WFfOSp8bqVY ---> Blender
 
 https://youtu.be/TuONZetc6QI ---> Unity
 
+# Final
+
+## --- Youtube---
+
+https://www.youtube.com/watch?v=2-PmM6Fx_co
+
+## --- Test---
+
+https://eljuanes.itch.io/animations-test
+
+
+
+
+
 
 # 1er Lote de animacion
 ## --- BLENDER---
